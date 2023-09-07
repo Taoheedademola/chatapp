@@ -1,0 +1,312 @@
+.formcontainer{
+    background-color: rgba(104, 184, 104, 0.933);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formwrapper{
+    background-color: #fff;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.logo{
+    color: rgb(88, 196, 88);
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: monospace;
+}
+.title{
+    color: rgb(88, 196, 88);
+    font-size: 12px;
+    font-weight: 600;
+}
+.input{
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(94, 155, 94);
+    outline: none;
+}
+.input::placeholder{
+    color: rgb(114, 168, 114);
+}
+.btn{
+    background-color: rgb(100, 165, 100);
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    width: 110%;
+}
+.p{
+    color: rgb(99, 156, 99);
+}
+.file{
+    border: none;
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;       
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .avater{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    gap: 10px;
+  }
+  .avaterimg{
+    width: 38px;
+  }
+  .home{
+    background-color: rgb(86, 179, 86);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.innercontainer{
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    width: 70%;
+    height: 80%;
+    display: flex;
+  }
+  .sidebar{
+    flex: 1.2;
+    background-color: rgba(74, 141, 45, 0.507);
+    position: relative;
+  }
+  .chat-1{
+    flex: 2;
+  }
+  .navber{
+    display: flex;
+    background-color: rgba(57, 102, 31, 0.438);
+    height: 30px;
+    padding: 10px;
+    justify-content: space-between;
+    color: #fff;
+  }
+  .logo-1{
+    font-weight: bold;
+  }
+
+  .user{
+    display: flex;
+    gap: 5px;
+  }
+  .img7{
+    background-color: #fff;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .btnn{
+    background-color: rgba(107, 196, 107, 0.555);
+    border: none; 
+    color: rgb(116, 224, 116);
+    cursor: pointer;
+    height: 25px;
+  }
+  .search{
+    border-bottom: 1px solid gray;
+  }
+  .userimg{
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .searchform{
+    padding: 10px;
+  }
+  .inp{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }
+  .inp::placeholder{
+    color: rgb(162, 176, 189);
+  }
+  .userchat{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  .userchat:hover{
+    background-color:  rgba(57, 102, 31, 0.438);
+  }
+  .usertxt{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .fr{
+    font-size: 12px;
+    color: lightgray;
+  }
+  .userchatInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .openinfo{
+    height: 30px;
+    background-color: rgba(74, 141, 45, 0.507);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; 
+    color: lightgray;
+  }
+  .openicons{
+    display: flex;
+    gap: 10px;
+  }
+  .openicons>img{
+    height: 24px;
+    cursor: pointer;
+  }
+  .messages{
+    padding: 10px;
+    background-color: rgb(95, 160, 79);
+    height: calc(100% - 120px);
+    overflow: scroll;
+  }
+  .messages::-webkit-scrollbar{
+    overflow: hidden;
+    width: 0 !important;
+  }
+  
+  .inpt{
+    height: 30px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.inpt>input{
+    width: 70%;
+    border: none;
+    outline: none;
+    color: rgb(61, 150, 61);
+    font-size: 18px;
+}
+.inpt>input::placeholder{
+    color: lightgray;
+}
+.send{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sendimg {
+    height: 24px;
+    cursor: pointer;
+}
+.send>button{
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(42, 102, 42);
+    cursor: pointer;
+}
+.message{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.messageInfo{
+    display: flex;
+     flex-direction: column;
+     color: gray;
+     font-weight: 300;
+}
+.messageInfo>img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.messageInfo>span{
+    font-weight: 400;
+    color: rgb(229, 229, 240);
+}
+.messageContent{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+.messageContent>p{
+     background-color: #fff;
+     padding: 10px 20px;
+     border-radius: 0px 10px 10px 10px;
+     max-width: max-content;
+}
+.messageImg{
+    width: 50%;
+}
+.ownerImg{
+  width: 50%;
+}
+
+.owner{
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+  .owner>.messageContent>p{
+    background-color: goldenrod;
+    border-radius: 10px 0px 10px 10px;
+    color: #fff;
+    /* background-color: gold; */
+}
+
+@media screen and (max-width: 768px) {
+    .logo-1{
+        display: none;
+    }
+    .innercontainer{
+        width: 90%;
+    }
+    .btnn{
+        position: absolute;
+        bottom: 10px;
+    }
+}
+.red{
+  color: rgb(233, 25, 25);
+  padding-left: 10px;
+}
+.messageImg{
+  margin-right: 50%;
+}
