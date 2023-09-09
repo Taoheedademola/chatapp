@@ -343,4 +343,10 @@ body {
   width: 50%;
   font-size: 12px;
 }
+.formcontainer{
+  width: 100%;
+}
+.formwrapper{
+  width: 50%;
+}
 }

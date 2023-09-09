@@ -17,7 +17,7 @@ import img from "../img/srch.png"
 function Searchbar() {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
-  const [err, setErr] = useState(null);
+  const [err, setErr] = useState(false);
 
   const { currentUser } = useContext(AuthContext);
 
