@@ -12,6 +12,7 @@ import {
 import React, { useContext, useState } from "react";
 import { db } from "../firebase";
 import { AuthContext } from "../context/Authcontext";
+import img from "../img/srch.png"
 
 function Searchbar() {
   const [username, setUsername] = useState("");
@@ -89,6 +90,7 @@ function Searchbar() {
           onChange={handleChange}
           value={username}
         />
+        <img src={img} className="srch" onClick={HandleSearch} alt="img" />
       </div>
       {err && <span>user not found</span>}
       {user && (

@@ -141,6 +141,8 @@ body {
   }
   .searchform{
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
   }
   .inp{
     background-color: transparent;
@@ -309,4 +311,36 @@ body {
 }
 .messageImg{
   margin-right: 50%;
+}
+.srch{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media screen and  (max-width: 480px) {
+
+/* .innercontainer{
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+} */
+.userimg{
+  width: 25px;
+  height: 25px;
+}
+.userchat{
+  align-items: center;
+}
+.usertxt{
+  font-size: 12px;
+}
+.searchform{
+  display: flex;
+  gap: 5px;
+}
+.inp{
+  width: 50%;
+  font-size: 12px;
+}
 }
