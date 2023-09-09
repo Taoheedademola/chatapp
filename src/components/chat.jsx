@@ -5,8 +5,9 @@ import More from "../img/more.png"
 import Messages from "./messages";
 import Input from "./input";
 import { ChatContext } from "../context/chatcontext";
+
 function Chat() {
-  const { data } = useContext(ChatContext);
+  const { data } = useContext (ChatContext);
 
     return(
         <div className="chat-1">
