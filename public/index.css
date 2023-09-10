@@ -350,3 +350,57 @@ body {
   width: 50%;
 }
 }
+
+.resetform{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 20px;
+
+}
+
+.reset{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(57, 170, 57);
+}
+.resettop{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.resetinput{
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+.resetbtn{
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  background-color: goldenrod;
+  color: #fff;
+}
+.ntb{
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+@media  screen and (min-width: 780px ) {
+  .resetform{
+    max-width: 30%;
+  }
+}

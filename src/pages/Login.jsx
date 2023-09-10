@@ -6,6 +6,7 @@ function Login() {
   const navigate = useNavigate();
   const [err, setErr] = useState(false);
 
+  
   const HandleSubmit = async (event) => {
     event.preventDefault();
     const email = event.target[0].value;
@@ -40,8 +41,11 @@ function Login() {
         <p className="p">
           You don't have an account?<Link to="/register">Register</Link>{" "}
         </p>
+        <Link to="/passwordreset">
+          <button className="ntb">forget password</button>
+        </Link>
       </div>
     </div>
   );
-};
+}
 export default Login;

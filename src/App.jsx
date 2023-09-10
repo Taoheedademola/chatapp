@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/Authcontext";
+import { Password } from "./components/Password";
 function App() {
   const { currentUser } = useContext(AuthContext);
 
@@ -32,6 +33,7 @@ function App() {
             />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
+            <Route path="passwordreset" element={<Password />} />
           </Route>
         </Routes>
       </BrowserRouter>
