@@ -11,6 +11,8 @@ function Register() {
   const navigate= useNavigate()
   const [err, setErr] = useState(false);
 
+  const [loader,  setLoader]= useState(false)
+
 
   const HandleSubmit = async (event) => {
     event.preventDefault();
@@ -56,6 +58,7 @@ function Register() {
       setErr(true);
       console.log(err);
     }
+    setLoader(true)
   };
 
   return (
@@ -80,7 +83,8 @@ function Register() {
             <img src={Add} alt="" className="avaterimg" />
             <span className="avatertext">Add an avater</span>
           </label>
-          <button className="btn">Sign Up</button>
+
+          <button className="btn">{loader? (<div className="spinner"></div>) :"Sign up"}</button>
           {err && <span className="red">something went wrong</span>}
         </form>
         <p className="p">You do have an account? <Link to="/login">Login</Link></p>

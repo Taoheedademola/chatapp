@@ -37,7 +37,7 @@
 }
 .btn{
     background-color: rgb(100, 165, 100);
-    padding: 10px;
+    padding: 10px 10px;
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -402,5 +402,25 @@ body {
 @media  screen and (min-width: 780px ) {
   .resetform{
     max-width: 30%;
+  }
+}
+
+.spinner{
+  padding: 10px;
+  border: 2px solid #EAF0F6;
+  border-radius: 50%;
+  margin: auto;
+  width: 13px;
+  height: 13px;
+  border-top: 2px solid #FF7A59;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }

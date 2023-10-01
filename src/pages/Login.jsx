@@ -6,6 +6,7 @@ function Login() {
   const navigate = useNavigate();
   const [err, setErr] = useState(false);
 
+  const [loader,  setLoader]= useState(false)
   
   const HandleSubmit = async (event) => {
     event.preventDefault();
@@ -18,6 +19,9 @@ function Login() {
     } catch (err) {
       setErr(true);
     }
+    setLoader(true)
+
+    
   };
   return (
     <div className="formcontainer">
@@ -35,7 +39,7 @@ function Login() {
             type="password"
             placeholder="Enter Your  password"
           />
-          <button className="btn">Sign In</button>
+          <button className="btn">{loader? (<div className="spinner"></div>) :"Sign in"}</button>
         </form>
         {err && <span className="red">something went wrong</span>}
         <p className="p">
