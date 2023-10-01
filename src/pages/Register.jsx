@@ -22,6 +22,7 @@ function Register() {
     const file = event.target[3].files[0];
 
     try {
+      setLoader(true)
       const res = await createUserWithEmailAndPassword(auth, email, password);
 
       const storageRef = ref(storage, displayName); 
@@ -50,6 +51,7 @@ function Register() {
             });
 
             await setDoc(doc(db, "userChats", res.user.uid) ,{})
+            
             navigate("/")
           }); 
         }
@@ -57,8 +59,9 @@ function Register() {
     } catch (err) {
       setErr(true);
       console.log(err);
+      setLoader(false)
     }
-    setLoader(true)
+    
   };
 
   return (

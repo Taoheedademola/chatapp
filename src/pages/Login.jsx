@@ -14,12 +14,14 @@ function Login() {
     const password = event.target[1].value;
 
     try {
+      setLoader(true)
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/");
     } catch (err) {
       setErr(true);
+      setLoader(false)
     }
-    setLoader(true)
+    
 
     
   };
